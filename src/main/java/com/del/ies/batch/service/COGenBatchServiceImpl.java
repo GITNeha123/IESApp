@@ -24,7 +24,7 @@ public class COGenBatchServiceImpl implements COGenBatch{
 		// TODO Auto-generated method stub
 		BatchEntity entity=new  BatchEntity();
 		BeanUtils.copyProperties(bDtls, entity);
-		entity.setbStatus("P");
+		bDtls.setBatchId(1);
 		BatchEntity saveEntity=bRepo.save(entity);
 		if(saveEntity.getBatchId()!=null) {
 			COBatchDtls dtls=new  COBatchDtls();
@@ -39,6 +39,7 @@ public class COGenBatchServiceImpl implements COGenBatch{
 	@Override
 	public boolean start(COBatchDtls bDtls) {
 		// TODO Auto-generated method stub
+		
 		return false;
 	}
 

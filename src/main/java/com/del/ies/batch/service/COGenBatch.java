@@ -5,7 +5,7 @@ import com.del.ies.batch.domain.COBatchDtls;
 
 public interface COGenBatch {
 	public COBatchDtls preProcess(COBatchDtls bDtls);
-	public boolean start(COBatchDtls bDtls);
+	
 	public boolean postProcess(COBatchDtls bDtls);
 
 }
